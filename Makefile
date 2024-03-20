@@ -5,7 +5,7 @@ CXX = g++
 CXXFLAGS = -std=c++11 -Wall -o3
 
 # Ziel: tr (das ausführbare Programm)
-tr: main.o calc.o
+calc: main.o calc.o
 	$(CXX) $(CXXFLAGS) $^ -o $@
 
 # Kompiliere main.cpp zu main.o
@@ -17,8 +17,8 @@ calc.o: calc.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 # Lösche alle erzeugten Dateien
-clean: tr
+clean: calc
 	rm -f *.o
-install: tr
+install: calc
 	mkdir -p $(HOME)/.local/bin
 	cp tr $(HOME)/.local/bin
