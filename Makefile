@@ -21,4 +21,4 @@ clean: calc
 	rm -f *.o
 install: calc
 	mkdir -p $(HOME)/.local/bin
-	cp tr $(HOME)/.local/bin
+	cp calc $(HOME)/.local/bin
