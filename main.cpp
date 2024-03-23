@@ -55,7 +55,8 @@ int main(int argc, char* argv[]){
     
     char tempNum[10];
     int temp = 0;
-    for(int i = 0;i < s.length();i++){
+    const int slength = s.length();
+    for(int i = 0;i < slength;i++){
         //cout << s[i] << "\n";
         if(s[i] != '\u0020'){
             //cout << s[i] << "\n";
