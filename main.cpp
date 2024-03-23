@@ -55,7 +55,7 @@ int main(int argc, char* argv[]){
     
     char tempNum[10];
     int temp = 0;
-    const int slength = s.length();
+    const int slength = int(s.length());
     for(int i = 0;i < slength;i++){
         //cout << s[i] << "\n";
         if(s[i] != '\u0020'){
@@ -74,9 +74,10 @@ int main(int argc, char* argv[]){
         }
             
     }
+    numbers[len] = calc.char_to_int(tempNum,temp);
+    
     cout << calc.cl(numbers, operatoren, len) << " ergebnis\n";
     //arduinoBack();
         
         return 0;
 }
-
