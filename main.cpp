@@ -48,7 +48,7 @@ int main(int argc, char* argv[]){
          * zahlen[0] operatoren[0] zahlen[1]            = 3
          *        1             +         2             = 3
          */
-    string s = "12 + 5 * 2+13=";
+    string s = argv[1];
     int len = 0;
     double numbers[10];
     char operatoren[10];
