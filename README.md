@@ -20,5 +20,3 @@ calc "12 +  12*5="
 ```
 the program ignores space.
 
-The program needs the "=" at the end of the string i will fix this bug.
-I will also include a method to handle negativ numbers and Potencies.
